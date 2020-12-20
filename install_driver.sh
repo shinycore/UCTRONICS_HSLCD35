@@ -32,7 +32,6 @@ sudo sed '/^$/d' -i /boot/config.txt
 sudo sed '$a hdmi_driver=2' -i /boot/config.txt
 
 echo "Install FBCP..."
-sudo apt-get install cmake
 sudo mkdir ./rpi-fbcp/build
 cd ./rpi-fbcp/build/
 sudo cmake ..
