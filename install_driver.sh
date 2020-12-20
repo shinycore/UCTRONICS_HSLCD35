@@ -8,7 +8,7 @@ echo "Enable uctronics-hslcd35 driver..."
 sudo sed 's/dtoverlay=uctronics-hslcd35//g' -i /boot/config.txt
 sudo sed '/^$/d' -i /boot/config.txt
 sudo sed '$a dtoverlay=uctronics-hslcd35' -i /boot/config.txt
-sudo cp ./usr/$(uname -r)/uctronics-hslcd35-overlay.dtb /boot/overlays/uctronics-hslcd35.dtbo
+sudo cp ./overlay/uctronics-hslcd35-overlay.dtb /boot/overlays/uctronics-hslcd35.dtbo
 
 echo "Change display resolution..."
 sudo sed 's/hdmi_force_hotplug=1//g' -i /boot/config.txt
